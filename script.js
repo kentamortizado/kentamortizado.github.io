@@ -1,5 +1,5 @@
 // Countdown Timer
-const weddingDate = new Date("2025-12-31 00:00:00").getTime();
+const weddingDate = new Date("2025-03-27 00:00:00").getTime();
 const timerElement = document.getElementById("timer");
 
 function updateCountdown() {
