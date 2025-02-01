@@ -36,7 +36,7 @@ document.getElementById("rsvp-form").addEventListener("submit", function(event) 
     const attendance = document.getElementById("attendance").value;
     const responseMessage = document.getElementById("response-message");
 
-    fetch("https://script.google.com/macros/s/AKfycbz0LSQ-3hg_Th08w1gbfTLvoh_wiUfd_TSinZN_DPzLAmRR4Isq4T3l7OCOoXjBsmXDuQ/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbynZeOOwxldXkSTFbJH-VV2eNkXyMonZpZ0KR3YPkFlsfqTCiUk8An0PZ-1ivcJK_XyuA/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, attendance })
