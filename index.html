@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wedding Invitation</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>We're Getting Married!</h1>
-      <h2>Kent & Margarette</h2>
-    </header>
+    <div class="hero">
+        <h1>You're Invited</h1>
+        <h2>To the Wedding of</h2>
+        <h1 class="names">[Your Name] & [Partner's Name]</h1>
+        <p class="date">[Wedding Date] | [Venue Name]</p>
+        <a href="#rsvp" class="btn">RSVP Now</a>
+    </div>
 
-    <section class="details">
-      <p>Join us as we celebrate our love and begin our journey together.</p>
-      <div class="info">
-        <p><strong>Date:</strong> March 27, 2025</p>
-        <p><strong>Time:</strong> 3:00 PM</p>
-        <p><strong>Venue:</strong> Tanauan, Batangas, Balai Farinas </p>
-      </div>
+    <section id="details">
+        <h2>Wedding Details</h2>
+        <p><strong>When:</strong> [Date & Time]</p>
+        <p><strong>Where:</strong> [Venue Address]</p>
+        <p><strong>Dress Code:</strong> [Formal / Semi-Formal]</p>
     </section>
 
-    <section class="rsvp">
-      <h3>RSVP</h3>
-      <form id="rsvpForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <select id="attendance" required>
-          <option value="">Will you attend?</option>
-          <option value="yes">Yes, I'll be there!</option>
-          <option value="no">Sorry, I can't make it.</option>
-        </select>
-        <button type="submit">Submit</button>
-      </form>
-      <p id="responseMessage"></p>
+    <section id="rsvp">
+        <h2>RSVP</h2>
+        <p>Please let us know if you’ll be attending.</p>
+        <a href="#" class="btn">Confirm Attendance</a>
     </section>
 
     <footer>
-      <p>We look forward to celebrating with you!</p>
+        <p>We can't wait to celebrate with you! ♥</p>
     </footer>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
