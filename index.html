@@ -53,8 +53,22 @@
     <!-- RSVP Section -->
     <section id="rsvp">
         <h2>RSVP</h2>
-        <button class="btn">Confirm Attendance</button>
+        <form id="rsvp-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="attendance">Will you be attending?</label>
+            <select id="attendance" name="attendance" required>
+                <option value="Yes">Yes, I'll be there!</option>
+                <option value="No">Sorry, I can't make it.</option>
+            </select>
+    
+            <button type="submit" class="btn">Submit RSVP</button>
+        </form>
+    
+        <p id="response-message" style="display: none;"></p>
     </section>
+    
 
     <!-- Location Section -->
     <section id="location">

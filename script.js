@@ -28,3 +28,27 @@ const menu = document.querySelector(".menu");
 menuBtn.addEventListener("click", () => {
     menu.style.display = menu.style.display === "block" ? "none" : "block";
 });
+
+document.getElementById("rsvp-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const attendance = document.getElementById("attendance").value;
+    const responseMessage = document.getElementById("response-message");
+
+    fetch("https://script.google.com/macros/s/YOUR_GOOGLE_SCRIPT_URL/exec", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, attendance })
+    })
+    .then(response => response.json())
+    .then(data => {
+        responseMessage.style.display = "block";
+        responseMessage.textContent = "Thank you for your response!";
+        document.getElementById("rsvp-form").reset();
+    })
+    .catch(error => {
+        responseMessage.style.display = "block";
+        responseMessage.textContent = "Something went wrong. Please try again!";
+    });
+});
