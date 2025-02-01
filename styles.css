@@ -93,6 +93,7 @@ button:hover {
     padding: 10px;
     color: white;
     text-align: center;
+    height: 30px;
 }
 
 .footer a {
