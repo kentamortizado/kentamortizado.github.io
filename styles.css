@@ -1,54 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 body {
     font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
-    background-color: #F5EFE6; /* Soft cream background */
-    color: #4A4A4A; /* Dark grey text */
+    background-color: #F5EFE6;
     text-align: center;
 }
 
-.hero {
-    background: url('https://source.unsplash.com/1600x900/?roses,wedding') center/cover;
+/* Mobile Navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background: #A67B6F;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
     color: white;
-    padding: 100px 20px;
+    z-index: 1000;
 }
 
-h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 50px;
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.names {
-    font-size: 60px;
+.menu {
+    display: none;
+    list-style: none;
+    background: #A67B6F;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 150px;
+    text-align: left;
 }
 
-.date {
-    font-size: 20px;
-    margin-bottom: 20px;
+.menu li {
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.countdown {
+    background: #A67B6F;
+    color: white;
+    padding: 20px;
+}
+
+.person img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
 
 .btn {
-    display: inline-block;
-    background-color: #A67B6F; /* Muted rose */
-    color: white;
     padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #8A5C50;
-}
-
-section {
-    padding: 50px 20px;
-    background-color: #FAF3E0; /* Light pastel */
-}
-
-footer {
-    background-color: #A67B6F;
+    background: #A67B6F;
     color: white;
-    padding: 20px;
+    border: none;
+    cursor: pointer;
 }

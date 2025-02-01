@@ -1,17 +1,30 @@
-document.getElementById('rsvpForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-  
-    const name = document.getElementById('name').value;
-    const attendance = document.getElementById('attendance').value;
-  
-    let message = '';
-    if (attendance === 'yes') {
-      message = `Thank you, ${name}! We can't wait to see you!`;
-    } else if (attendance === 'no') {
-      message = `We'll miss you, ${name}. Thank you for letting us know!`;
-    } else {
-      message = 'Please fill out the form completely.';
+// Countdown Timer
+const weddingDate = new Date("2025-12-31 00:00:00").getTime();
+const timerElement = document.getElementById("timer");
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const timeLeft = weddingDate - now;
+
+    if (timeLeft < 0) {
+        timerElement.innerHTML = "The wedding has started! 🎉";
+        return;
     }
-  
-    document.getElementById('responseMessage').textContent = message;
-  });
+
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    timerElement.innerHTML = `${days} Days ${hours}h ${minutes}m ${seconds}s`;
+}
+
+setInterval(updateCountdown, 1000);
+
+// Mobile Menu Toggle
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+
+menuBtn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+});

@@ -3,33 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Invitation</title>
+    <title>Our Wedding Invitation</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <div class="hero">
-        <h1>You're Invited</h1>
-        <h2>To the Wedding of</h2>
-        <h1 class="names">[Your Name] & [Partner's Name]</h1>
-        <p class="date">[Wedding Date] | [Venue Name]</p>
-        <a href="#rsvp" class="btn">RSVP Now</a>
-    </div>
 
-    <section id="details">
-        <h2>Wedding Details</h2>
-        <p><strong>When:</strong> [Date & Time]</p>
-        <p><strong>Where:</strong> [Venue Address]</p>
-        <p><strong>Dress Code:</strong> [Formal / Semi-Formal]</p>
+    <!-- Mobile Navigation -->
+    <nav>
+        <div class="menu-btn">&#9776;</div>
+        <ul class="menu">
+            <li><a href="#intro">About Us</a></li>
+            <li><a href="#dress-code">Dress Code</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+            <li><a href="#location">Location</a></li>
+        </ul>
+    </nav>
+
+    <!-- Countdown Timer -->
+    <section class="countdown">
+        <h2>Countdown to Our Wedding</h2>
+        <p id="timer">Loading...</p>
     </section>
 
+    <!-- Introduction Section -->
+    <section id="intro">
+        <h1>Welcome to Our Wedding!</h1>
+        <div class="couple-container">
+            <div class="person">
+                <img src="your-image.jpg" alt="Your Name">
+                <h2>Your Name</h2>
+            </div>
+            <div class="person">
+                <img src="partner-image.jpg" alt="Partner's Name">
+                <h2>Partner's Name</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code Section -->
+    <section id="dress-code">
+        <h2>Wedding Dress Code</h2>
+        <ul>
+            <li>Men: Formal Suit / Barong</li>
+            <li>Women: Elegant Dress / Gown</li>
+        </ul>
+    </section>
+
+    <!-- RSVP Section -->
     <section id="rsvp">
         <h2>RSVP</h2>
-        <p>Please let us know if you’ll be attending.</p>
-        <a href="#" class="btn">Confirm Attendance</a>
+        <button class="btn">Confirm Attendance</button>
     </section>
 
-    <footer>
-        <p>We can't wait to celebrate with you! ♥</p>
-    </footer>
+    <!-- Location Section -->
+    <section id="location">
+        <h2>Venue Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=[Google Maps Link]" width="100%" height="300"></iframe>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
