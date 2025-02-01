@@ -274,3 +274,59 @@ button:hover {
         max-width: 200px; /* Smaller image size on mobile */
     }
 }
+
+/* Picture and Message Section */
+.picture-message {
+    text-align: center;
+    margin: 30px 0;
+    background-color: #F5EFE6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.picture-container {
+    margin-bottom: 20px;
+}
+
+.couple-picture {
+    width: 100%;
+    max-width: 400px; /* Set a max width for the picture */
+    height: auto;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+}
+
+.message h3 {
+    font-size: 2em;
+    color: #A67B6F;
+    margin: 10px 0;
+}
+
+.message p {
+    font-size: 1.2em;
+    color: #A67B6F;
+    margin: 10px auto;
+    width: 80%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .picture-message {
+        padding: 15px;
+    }
+
+    .message h3 {
+        font-size: 1.5em;
+    }
+
+    .message p {
+        font-size: 1em;
+        width: 90%;
+    }
+
+    .couple-picture {
+        max-width: 300px; /* Smaller picture size for mobile */
+    }
+}
