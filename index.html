@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>We're Getting Married!</h1>
+      <h2>Sarah & John</h2>
+    </header>
+
+    <section class="details">
+      <p>Join us as we celebrate our love and begin our journey together.</p>
+      <div class="info">
+        <p><strong>Date:</strong> December 25, 2025</p>
+        <p><strong>Time:</strong> 4:00 PM</p>
+        <p><strong>Venue:</strong> Sunny Gardens, 123 Love Street, Paradise City</p>
+      </div>
+    </section>
+
+    <section class="rsvp">
+      <h3>RSVP</h3>
+      <form id="rsvpForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <select id="attendance" required>
+          <option value="">Will you attend?</option>
+          <option value="yes">Yes, I'll be there!</option>
+          <option value="no">Sorry, I can't make it.</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="responseMessage"></p>
+    </section>
+
+    <footer>
+      <p>We look forward to celebrating with you!</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
