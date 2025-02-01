@@ -22,11 +22,26 @@
         <div class="wedding-date">
             Wedding Date: March 27, 2024
         </div>
+        <div class="rsvp-btn">
+            <button onclick="showRsvpForm()">RSVP</button>
+        </div>
     </div>
 
     <div class="footer">
         <p>With love, Kent & Margarette</p>
         <p><a href="mailto:kent.margarette@example.com">Contact Us</a></p>
+    </div>
+
+    <div id="rsvp-form" class="rsvp-form">
+        <h2>RSVP Form</h2>
+        <form id="form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="message">Message for Us:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+            <button type="button" onclick="closeRsvpForm()">Close</button>
+        </form>
     </div>
 
     <script src="script.js"></script>
