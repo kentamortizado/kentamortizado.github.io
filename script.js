@@ -22,7 +22,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 });
 
 // Set the wedding date
-const weddingDate = new Date("March 27, 2024 00:00:00").getTime();
+const weddingDate = new Date("March 27, 2025 00:00:00").getTime();
 
 // Update the countdown every second
 const countdown = setInterval(function() {
