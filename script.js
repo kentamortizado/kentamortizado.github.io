@@ -39,7 +39,8 @@ document.getElementById("rsvp-form").addEventListener("submit", function(event) 
     fetch("https://script.google.com/macros/s/AKfycbynZeOOwxldXkSTFbJH-VV2eNkXyMonZpZ0KR3YPkFlsfqTCiUk8An0PZ-1ivcJK_XyuA/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, attendance })
+        body: JSON.stringify({ name, attendance }),
+        mode: 'cors'  // Enable CORS mode
     })
     .then(response => response.json())
     .then(data => {
@@ -48,6 +49,7 @@ document.getElementById("rsvp-form").addEventListener("submit", function(event) 
         document.getElementById("rsvp-form").reset();
     })
     .catch(error => {
+        console.error("Error:", error);
         responseMessage.style.display = "block";
         responseMessage.textContent = "Something went wrong. Please try again!";
     });
