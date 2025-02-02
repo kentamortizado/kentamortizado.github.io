@@ -4,7 +4,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
     const name = document.getElementById("name").value;
     const message = document.getElementById("message").value;
-    const webhookURL = "https://script.google.com/macros/s/AKfycbyJMa3nn8nzKatrWucTcmFntXMnAz2XuiUBj_ieF2EDBjvvbtbEerqy8D0qj50Ic1Xm6w/exec";
+    const webhookURL = "https://script.google.com/macros/s/AKfycbybpiOc_Im2B8NLHFo2eb6EQPvki9CRKqHTkMdCQe5VsYuw-ndRdU5f5dqDIPVnbE_eRw/exec";
 
     fetch(webhookURL, {
         method: "POST",
