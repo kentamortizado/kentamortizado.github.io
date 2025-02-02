@@ -433,13 +433,12 @@ button:hover {
 .venue h3 {
     font-size: 2em;
     color: #fafafa;
-    margin-bottom: 15px;
-    background-color: #5b6b61;
     border-radius: 10%;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
 .venue p {
-    background-color: #5b6b61;
     font-size: 1.2em;
     color: #A67B6F;
     margin: 10px 0;
