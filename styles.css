@@ -424,7 +424,7 @@ button:hover {
 .venue {
     text-align: center;
     margin: 40px 0;
-    background-color: #5b6b61;
+    background-color: transparent;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -434,6 +434,7 @@ button:hover {
     font-size: 2em;
     color: #fafafa;
     margin-bottom: 15px;
+    background-color: #5b6b61;
 }
 
 .venue p {
