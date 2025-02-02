@@ -88,7 +88,7 @@ document.getElementById('rsvpForm').addEventListener('submit', function (e) {
     const now = new Date();
     formData.append('timestamp', now.toISOString());
 
-    fetch('https://script.google.com/macros/s/AKfycbybsu5O-_xahdXt-D6SjqeEq14K3RZX9L0ryc30Ygi2nchZXQKewnt1EXH0EHux3Z-gZA/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbxheIy1wqYrnv3QtRgb3ae4DlLLhTXF5Z2N1c6iZf7MGSytt3sxJhNtPjtffIUFD6vtPA/exec', {
         method: 'POST',
         body: formData,
         mode: 'no-cors'
