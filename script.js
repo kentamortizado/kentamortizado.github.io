@@ -36,8 +36,3 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateCountdown, 1000);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Add the 'visible' class after the page has loaded
-    const ribbon = document.getElementById('ribbon');
-    ribbon.classList.add('visible');
-});
