@@ -24,6 +24,51 @@ nav .logo {
     font-size: 24px;
 }
 
+.ribbon {
+    position: relative;
+    display: inline-block;
+    background-color: #5b6b61; /* Adjust ribbon color */
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0); /* Initially scale down */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease; /* Smooth transition */
+}
+
+.ribbon.visible {
+    transform: scale(1); /* Scale to original size */
+    opacity: 1;
+}
+
+.ribbon:before,
+.ribbon:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #5b6b61; /* Ribbon color */
+}
+
+.ribbon:before {
+    top: -15px;
+    left: 0;
+}
+
+.ribbon:after {
+    bottom: -15px;
+    right: 0;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
 
 .container {
     min-height: 100%;
