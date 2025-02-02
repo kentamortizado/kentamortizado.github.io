@@ -90,8 +90,7 @@ function submitMessage() {
 function fetchHashtagPosts() {
   // Example post objects (could be fetched dynamically from Instagram, Twitter, etc.)
   const posts = [
-    { image: 'path/to/image1.jpg', caption: 'What a beautiful day! #YourWeddingHashtag' },
-    { image: 'path/to/image2.jpg', caption: 'Congratulations! #YourWeddingHashtag' }
+    
   ];
 
   const postContainer = document.getElementById('wall-container');
