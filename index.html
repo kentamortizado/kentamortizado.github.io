@@ -30,33 +30,32 @@
         </div>
     </div>
     
-    <!-- RSVP Button -->
-<button id="openModal">RSVP Now</button>
-
-<!-- RSVP Modal -->
-<div id="rsvpModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>RSVP to Our Wedding</h2>
-        <form id="rsvpForm">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" placeholder="Leave a message for us"></textarea>
-            <select id="attendance" name="attendance" required>
-                <option value="">Will you attend?</option>
-                <option value="Yes">Yes, I'll be there!</option>
-                <option value="No">Sorry, I can't make it.</option>
-            </select>
-            <button type="submit">Submit</button>
-        </form>
-        <p id="responseMessage"></p>
-        <div id="loadingSpinner" class="spinner" style="display: none;"></div>
-    </div>
-</div>
-
-<p id="responseMessage"></p>
-
     <div class="container floral-background">
+        <!-- RSVP Button -->
+        <button id="openModal">RSVP Now</button>
+
+        <!-- RSVP Modal -->
+        <div id="rsvpModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>RSVP to Our Wedding</h2>
+                <form id="rsvpForm">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Leave a message for us"></textarea>
+                    <select id="attendance" name="attendance" required>
+                        <option value="">Will you attend?</option>
+                        <option value="Yes">Yes, I'll be there!</option>
+                        <option value="No">Sorry, I can't make it.</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="responseMessage"></p>
+                <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+            </div>
+        </div>
+        <p id="responseMessage"></p>
+
         <div class="scroll-down">Scroll Down</div>
 
         <div class="countdown-container">
