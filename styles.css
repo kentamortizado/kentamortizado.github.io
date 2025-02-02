@@ -519,6 +519,9 @@ iframe {
     cursor: pointer;
     border-radius: 8px;
     transition: background 0.3s ease;
+    display: block; /* Ensure it takes up space */
+    margin: 20px auto; /* Auto margin centers it horizontally */
+    text-align: center;
 }
 
 #openModal:hover {
