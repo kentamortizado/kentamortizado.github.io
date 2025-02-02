@@ -511,7 +511,7 @@ iframe {
 /* Form Container */
 /* RSVP Button */
 #openModal {
-    background-color: #B5838D;
+    background-color: #5b6b61;
     color: white;
     border: none;
     padding: 12px 18px;
@@ -525,7 +525,7 @@ iframe {
 }
 
 #openModal:hover {
-    background-color: #8E6A74;
+    background-color: #2c342f;
 }
 
 /* Modal Styling */
