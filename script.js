@@ -37,36 +37,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-  document.getElementById('rsvpForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-  
-    // Show spinner
-    document.getElementById('loadingSpinner').style.display = 'block';
-  
-    // Get form data
-    const formData = new FormData(this);
-  
-    // Add a timestamp
-    const now = new Date();
-    formData.append('timestamp', now.toISOString());
-  
-    // Send data to Google Apps Script endpoint
-    fetch('https://script.google.com/macros/s/AKfycbybsu5O-_xahdXt-D6SjqeEq14K3RZX9L0ryc30Ygi2nchZXQKewnt1EXH0EHux3Z-gZA/exec', {
-      method: 'POST',
-      body: formData,
-      mode: 'no-cors'
+document.getElementById('rsvpForm').addEventListener('submit', function (e) {
+e.preventDefault();
+
+// Show spinner
+document.getElementById('loadingSpinner').style.display = 'block';
+
+// Get form data
+const formData = new FormData(this);
+
+// Add a timestamp
+const now = new Date();
+formData.append('timestamp', now.toISOString());
+
+// Send data to Google Apps Script endpoint
+fetch('https://script.google.com/macros/s/AKfycbybsu5O-_xahdXt-D6SjqeEq14K3RZX9L0ryc30Ygi2nchZXQKewnt1EXH0EHux3Z-gZA/exec', {
+    method: 'POST',
+    body: formData,
+    mode: 'no-cors'
+})
+    .then(() => {
+    // Display success message
+    document.getElementById('responseMessage').textContent = 'Thank you for your RSVP!';
+    document.getElementById('rsvpForm').reset();
     })
-      .then(() => {
-        // Display success message
-        document.getElementById('responseMessage').textContent = 'Thank you for your RSVP!';
-        document.getElementById('rsvpForm').reset();
-      })
-      .catch(() => {
-        // Display error message
-        document.getElementById('responseMessage').textContent = 'Oops! Something went wrong. Please try again.';
-      })
-      .finally(() => {
-        // Hide spinner
-        document.getElementById('loadingSpinner').style.display = 'none';
-      });
-  });
+    .catch(() => {
+    // Display error message
+    document.getElementById('responseMessage').textContent = 'Oops! Something went wrong. Please try again.';
+    })
+    .finally(() => {
+    // Hide spinner
+    document.getElementById('loadingSpinner').style.display = 'none';
+    });
+});

@@ -78,23 +78,6 @@ h1 {
     text-align: center;
 }
 
-
-
-button {
-    background-color: #A67B6F;
-    color: white;
-    font-size: 1.2rem;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #5A3E2B;
-}
-
 .footer {
     text-align: center;
     background-color: #A67B6F;
@@ -313,10 +296,6 @@ button:hover {
     right: 10px;
 }
 
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 
 .message h3 {
     font-size: 2em;
@@ -528,18 +507,82 @@ iframe {
 
 
 /* RSVP */
+
+/* Form Container */
+form {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #D5C6C1; /* Soft muted border */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #FAF9F8;
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    color: #B8A9A3;
+}
+
+/* Submit Button */
+button {
+    background-color: #B5838D; /* Soft romantic pink */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #8E6A74; /* Darker pink on hover */
+}
+
+/* Response Message */
+#responseMessage {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6A6871;
+}
+
+/* Loading Spinner */
 .spinner {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #5a3e36;
-    border-radius: 50%;
+    display: inline-block;
     width: 30px;
     height: 30px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-top: 3px solid #B5838D; /* Matches button color */
+    border-radius: 50%;
     animation: spin 1s linear infinite;
-    margin: 20px auto;
-  }
+    margin: 10px auto;
+}
   
-  @keyframes spin {
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+}
 
+/* Mobile Friendly */
+@media (max-width: 480px) {
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+    button {
+        width: 100%;
+    }
+}
