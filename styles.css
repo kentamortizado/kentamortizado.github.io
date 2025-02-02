@@ -17,13 +17,13 @@ nav {
     padding: 15px;
     color: white;
     z-index: 1000;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 nav .logo {
     font-weight: 700;
     font-size: 24px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
 }
 
 
