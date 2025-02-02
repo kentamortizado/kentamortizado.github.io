@@ -1,142 +1,110 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 body {
     background-color: #F5EFE6;
     font-family: 'Playfair Display', serif;
-    margin: 0;
-    padding: 0;
     text-align: center;
+    margin: 0;
 }
 
 /* Navigation */
 nav {
     position: fixed;
-    top: 0;
     width: 100%;
     background: #A67B6F;
     padding: 15px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
     z-index: 1000;
 }
 
-/* Picture and Message Section */
-.picture-message {
-    padding: 100px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.picture-container {
-    width: 80%;
-    max-width: 400px;
-}
-
-.couple-picture {
-    width: 100%;
-    border-radius: 20%;
-    display: block;
-}
-
-/* Message */
-.message {
-    margin-top: 20px;
-    width: 80%;
-    max-width: 600px;
-}
-
-/* Wedding Dress Code */
-.dress-code {
-    margin-top: 30px;
-    padding: 20px;
-}
-
-.dress-code h3 {
-    color: #A67B6F;
-}
-
-.dress-code-images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-.image-container {
-    text-align: center;
-}
-
-.image-container img {
-    width: 150px;
+/* Image Slider */
+.slider-container {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
     border-radius: 10px;
+    margin-top: 70px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Countdown */
+#wedding-info {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/* Dress Code */
+.dress-code img {
+    width: 100px;
+    margin: 10px;
+}
+
+/* Venue */
+.venue iframe {
+    width: 90%;
+    height: 300px;
+    border: 0;
 }
 
 /* RSVP Form */
+.rsvp {
+    margin-top: 30px;
+}
+
 .rsvp-form {
     display: none;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-.rsvp-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.rsvp-form input,
-.rsvp-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: none;
-}
-
-.rsvp-form button {
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    background: #A67B6F;
-    color: white;
-    border-radius: 5px;
-}
-
-/* Venue */
-.venue {
-    margin-top: 30px;
+    background: white;
     padding: 20px;
+    box-shadow: 0px 0px 10px #ccc;
 }
 
-.venue h3 {
-    color: #A67B6F;
+.couple-picture {
+    width: 100%;
+    max-width: 400px; /* Adjust size as needed */
+    border-radius: 20%;
+    display: block;
+    margin: auto;
 }
 
-.map-container {
-    margin-top: 10px;
-}
-
-/* Footer */
-.footer {
-    background: #A67B6F;
-    color: white;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-#timer {
-    font-size: 18px;
-    font-weight: bold;
-}
