@@ -70,3 +70,39 @@ document.getElementById('rsvpForm').addEventListener('submit', function (e) {
         document.getElementById('loadingSpinner').style.display = 'none';
     });
 });
+
+/// HASHTAGWALL
+const hashtag = '#YourWeddingHashtag';
+
+function submitMessage() {
+  const message = document.getElementById('guest-message').value;
+  if (message.trim()) {
+    const postContainer = document.getElementById('wall-container');
+    const newPost = document.createElement('div');
+    newPost.classList.add('post');
+    newPost.innerHTML = `<p>${message}</p>`;
+    postContainer.appendChild(newPost);
+    document.getElementById('guest-message').value = ''; // Clear the input
+  }
+}
+
+// This is a placeholder for integrating API calls to display hashtagged posts from social media
+function fetchHashtagPosts() {
+  // Example post objects (could be fetched dynamically from Instagram, Twitter, etc.)
+  const posts = [
+    { image: 'path/to/image1.jpg', caption: 'What a beautiful day! #YourWeddingHashtag' },
+    { image: 'path/to/image2.jpg', caption: 'Congratulations! #YourWeddingHashtag' }
+  ];
+
+  const postContainer = document.getElementById('wall-container');
+  
+  posts.forEach(post => {
+    const postDiv = document.createElement('div');
+    postDiv.classList.add('post');
+    postDiv.innerHTML = `<img src="${post.image}" alt="Wedding Moment"><p>${post.caption}</p>`;
+    postContainer.appendChild(postDiv);
+  });
+}
+
+// Call the function to load posts when the page loads
+window.onload = fetchHashtagPosts;

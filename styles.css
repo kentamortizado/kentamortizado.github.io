@@ -632,3 +632,47 @@ button:hover {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+/* HASHTAG WALL */
+#hashtag-wall {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+#hashtag-wall h2 {
+color: #333;
+font-family: 'Arial', sans-serif;
+}
+
+#wall-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 15px;
+margin-top: 20px;
+}
+
+.post {
+background: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 10px;
+text-align: center;
+}
+
+.post img {
+width: 100%;
+border-radius: 8px;
+}
+
+#message-box {
+margin-top: 20px;
+}
+
+#guest-message {
+width: 60%;
+padding: 8px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}  
