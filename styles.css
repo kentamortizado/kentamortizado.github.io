@@ -438,6 +438,7 @@ button:hover {
 }
 
 .venue p {
+    background-color: #5b6b61;
     font-size: 1.2em;
     color: #A67B6F;
     margin: 10px 0;
