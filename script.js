@@ -26,61 +26,40 @@ function closeRsvpForm() {
     document.getElementById("rsvp-form").style.display = "none";
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    function updateCountdown() {
+        const weddingDate = new Date("March 27, 2025 00:00:00").getTime();
+        const now = new Date().getTime();
+        const timeLeft = weddingDate - now;
 
-// Set the wedding date
-const weddingDate = new Date("March 27, 2025 00:00:00").getTime();
+        if (timeLeft < 0) {
+            document.getElementById("countdown").innerHTML = "The event has started!";
+            return;
+        }
 
-// Update the countdown every second
-const countdown = setInterval(function() {
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    // Get the current date and time
-    const now = new Date().getTime();
-
-    // Find the time remaining
-    const timeLeft = weddingDate - now;
-
-    // Calculate days, hours, minutes, and seconds
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-    // Display the result in the element with the ID "timer"
-    document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-    // If the countdown is over, display a message
-    if (timeLeft < 0) {
-        clearInterval(countdown);
-        document.getElementById("timer").innerHTML = "The big day has arrived!";
+        document.getElementById("countdown").innerHTML = `
+            <div class="countdown-box">
+                <div class="countdown-labels">
+                    <span>Days</span>
+                    <span>Hours</span>
+                    <span>Minutes</span>
+                    <span>Seconds</span>
+                </div>
+                <div class="countdown-timer">
+                    <span>${days}</span>
+                    <span>${hours}</span>
+                    <span>${minutes}</span>
+                    <span>${seconds}</span>
+                </div>
+            </div>
+        `;
     }
-}, 1000);
 
-
-let currentIndex = 0;
-
-function showSlide(index) {
-    const slider = document.querySelector('.slider');
-    const totalSlides = document.querySelectorAll('.slider img').length;
-    
-    if (index >= totalSlides) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = totalSlides - 1;
-    } else {
-        currentIndex = index;
-    }
-    
-    const offset = -currentIndex * 100 + '%';
-    slider.style.transform = `translateX(${offset})`;
-}
-
-function nextSlide() {
-    showSlide(currentIndex + 1);
-}
-
-function prevSlide() {
-    showSlide(currentIndex - 1);
-}
-
-// Auto-slide every 3 seconds
-setInterval(nextSlide, 3000);
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+});
