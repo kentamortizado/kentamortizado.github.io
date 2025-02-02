@@ -545,6 +545,7 @@ iframe {
     opacity: 0.8;
     animation: fall 10s linear infinite, rotate 5s ease-in-out infinite;
     fill: #5b6b61;
+    filter: sepia(30%) saturate(200%) hue-rotate(90deg);
 }
 
 /* Left leaf animation */
