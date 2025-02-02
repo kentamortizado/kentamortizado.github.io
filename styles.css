@@ -597,6 +597,7 @@ button {
     border-radius: 8px;
     transition: background 0.3s ease;
     width: 50%;
+    text-align: center;
 }
 
 button:hover {
