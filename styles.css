@@ -514,3 +514,70 @@ iframe {
     font-weight: bold;
     color: #A67B6F;
 }
+
+
+/* FALLING LEAVES */
+/* Container for the falling leaves */
+.falling-leaves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensures that the leaves don't interfere with clicks */
+    z-index: -1; /* Keeps the leaves behind the content */
+}
+
+/* Common leaf style */
+.leaf {
+    position: absolute;
+    width: 50px; /* Adjust the size of the leaf */
+    opacity: 0.8;
+    animation: fall 10s linear infinite, rotate 5s ease-in-out infinite;
+}
+
+/* Left leaf animation */
+.left-leaf {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+/* Right leaf animation */
+.right-leaf {
+    right: 10%;
+    animation-delay: 2s; /* Different delay for staggered falling effect */
+}
+
+/* Top leaf animation */
+.top-leaf {
+    left: 30%;
+    animation-delay: 4s;
+}
+
+/* Bottom leaf animation */
+.bottom-leaf {
+    right: 30%;
+    animation-delay: 6s;
+}
+
+/* Falling animation (leaves drop from top to bottom) */
+@keyframes fall {
+    0% {
+        top: -10%;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 100%;
+        transform: rotate(360deg); /* Makes the leaf spin as it falls */
+    }
+}
+
+/* Rotation animation (leaves spin slightly) */
+@keyframes rotate {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+}
