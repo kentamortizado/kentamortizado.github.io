@@ -63,7 +63,8 @@ h1 {
     font-weight: bold;
     background-color: #A67B6F;
     color: #F5EFE6;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     animation: fadeIn 3s ease-out;
 }
 
