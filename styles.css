@@ -26,10 +26,12 @@ nav .logo {
 
 
 .container {
-    margin-top: 0px;
-    text-align: center;
-    padding: 0px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 h1 {
     font-size: 3rem;
@@ -88,13 +90,18 @@ button:hover {
 }
 
 .footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background: #A67B6F;
-    padding: 10px;
-    color: white;
     text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer {
+    margin-top: auto;
 }
 
 .footer a {
