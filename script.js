@@ -70,3 +70,37 @@ fetch('https://script.google.com/macros/s/AKfycbybsu5O-_xahdXt-D6SjqeEq14K3RZX9L
     document.getElementById('loadingSpinner').style.display = 'none';
     });
 });
+
+document.getElementById('openModal').addEventListener('click', function() {
+    document.getElementById('rsvpModal').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener('click', function() {
+    document.getElementById('rsvpModal').style.display = 'none';
+});
+
+document.getElementById('rsvpForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    document.getElementById('loadingSpinner').style.display = 'block';
+
+    const formData = new FormData(this);
+    const now = new Date();
+    formData.append('timestamp', now.toISOString());
+
+    fetch('https://script.google.com/macros/s/AKfycbybsu5O-_xahdXt-D6SjqeEq14K3RZX9L0ryc30Ygi2nchZXQKewnt1EXH0EHux3Z-gZA/exec', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+    })
+    .then(() => {
+        document.getElementById('responseMessage').textContent = 'Thank you for your RSVP!';
+        document.getElementById('rsvpForm').reset();
+    })
+    .catch(() => {
+        document.getElementById('responseMessage').textContent = 'Oops! Something went wrong. Please try again.';
+    })
+    .finally(() => {
+        document.getElementById('loadingSpinner').style.display = 'none';
+    });
+});
