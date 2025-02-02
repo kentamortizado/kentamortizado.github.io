@@ -4,7 +4,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
     const name = document.getElementById("name").value;
     const message = document.getElementById("message").value;
-    const webhookURL = "https://script.google.com/macros/s/AKfycbyJMa3nn8nzKatrWucTcmFntXMnAz2XuiUBj_ieF2EDBjvvbtbEerqy8D0qj50Ic1Xm6w/exec";
+    const webhookURL = "https://script.google.com/macros/s/AKfycbybpiOc_Im2B8NLHFo2eb6EQPvki9CRKqHTkMdCQe5VsYuw-ndRdU5f5dqDIPVnbE_eRw/exec";
 
     fetch(webhookURL, {
         method: "POST",
@@ -54,3 +54,33 @@ const countdown = setInterval(function() {
         document.getElementById("timer").innerHTML = "The big day has arrived!";
     }
 }, 1000);
+
+
+let currentIndex = 0;
+
+function showSlide(index) {
+    const slider = document.querySelector('.slider');
+    const totalSlides = document.querySelectorAll('.slider img').length;
+    
+    if (index >= totalSlides) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else {
+        currentIndex = index;
+    }
+    
+    const offset = -currentIndex * 100 + '%';
+    slider.style.transform = `translateX(${offset})`;
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+// Auto-slide every 3 seconds
+setInterval(nextSlide, 3000);
