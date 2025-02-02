@@ -61,7 +61,8 @@ h1 {
 .wedding-date {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #A67B6F;
+    background-color: #A67B6F;
+    color: #F5EFE6;
     margin-top: 20px;
     animation: fadeIn 3s ease-out;
 }
