@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     formData.append('timestamp', now.toISOString());
   
     // Send data to Google Apps Script endpoint
-    fetch('https://script.google.com/macros/s/AKfycbybpiOc_Im2B8NLHFo2eb6EQPvki9CRKqHTkMdCQe5VsYuw-ndRdU5f5dqDIPVnbE_eRw/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbybsu5O-_xahdXt-D6SjqeEq14K3RZX9L0ryc30Ygi2nchZXQKewnt1EXH0EHux3Z-gZA/exec', {
       method: 'POST',
       body: formData,
       mode: 'no-cors'
