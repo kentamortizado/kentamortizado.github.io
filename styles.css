@@ -471,7 +471,7 @@ iframe {
 .countdown-labels {
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 25px;
     font-size: 14px;
     text-transform: uppercase;
     color: gray;
@@ -481,7 +481,7 @@ iframe {
 .countdown-timer {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     font-size: 30px;
     font-weight: bold;
     color: #A67B6F;
