@@ -1,25 +1,31 @@
 // Show RSVP form when the button is clicked
-function showRsvpForm() {
-    document.getElementById('rsvp-form').style.display = 'flex';
-}
-
-// Close RSVP form
-function closeRsvpForm() {
-    document.getElementById('rsvp-form').style.display = 'none';
-}
-
-// Handle form submission
-document.getElementById('form').addEventListener('submit', function (event) {
+document.getElementById("form").addEventListener("submit", function(event) {
     event.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const message = document.getElementById('message').value;
 
-    if (name && message) {
-        alert(`Thank you for your RSVP, ${name}! Your message: "${message}" has been received.`);
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+    const webhookURL = "https://script.google.com/macros/s/AKfycbz6_YRQIGHR44cGT8xjbkeM18GMswVR7cY2X5AZRJRteNE85n8DNkZtbVoHBJSfnMDibA/exec";
+
+    fetch(webhookURL, {
+        method: "POST",
+        body: JSON.stringify({ name, message }),
+        headers: { "Content-Type": "application/json" }
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert("Thank you for your RSVP!");
+        document.getElementById("form").reset();
         closeRsvpForm();
-    }
+    })
+    .catch(error => {
+        alert("Something went wrong. Please try again.");
+    });
 });
+
+function closeRsvpForm() {
+    document.getElementById("rsvp-form").style.display = "none";
+}
+
 
 // Set the wedding date
 const weddingDate = new Date("March 27, 2025 00:00:00").getTime();
