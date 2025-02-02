@@ -301,7 +301,7 @@ button:hover {
     width: 100%;
     max-width: 400px; /* Set a max width for the picture */
     height: auto;
-    border-radius: 50%; /* Makes the image round */
+    border-radius: 10%; /* Makes the image round */
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
 }
