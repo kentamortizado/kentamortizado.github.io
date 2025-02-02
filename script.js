@@ -4,14 +4,14 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
     const name = document.getElementById("name").value;
     const message = document.getElementById("message").value;
-    const webhookURL = "https://script.google.com/macros/s/AKfycbz6_YRQIGHR44cGT8xjbkeM18GMswVR7cY2X5AZRJRteNE85n8DNkZtbVoHBJSfnMDibA/exec";
+    const webhookURL = "https://script.google.com/macros/s/AKfycbyJMa3nn8nzKatrWucTcmFntXMnAz2XuiUBj_ieF2EDBjvvbtbEerqy8D0qj50Ic1Xm6w/exec";
 
     fetch(webhookURL, {
         method: "POST",
         body: JSON.stringify({ name, message }),
         headers: { "Content-Type": "application/json" }
     })
-    .then(response => response.text())
+    .then(response => response.json())
     .then(data => {
         alert("Thank you for your RSVP!");
         document.getElementById("form").reset();
