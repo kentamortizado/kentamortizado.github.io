@@ -26,9 +26,9 @@ nav .logo {
 
 
 .container {
-    margin-top: 10px;
+    margin-top: 0px;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
 }
 
 h1 {
@@ -481,7 +481,7 @@ iframe {
 .countdown-timer {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 60px;
     font-size: 30px;
     font-weight: bold;
     color: #A67B6F;
