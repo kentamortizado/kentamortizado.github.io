@@ -541,6 +541,7 @@ iframe {
     width: 50px; /* Adjust the size of the leaf */
     opacity: 0.8;
     animation: fall 10s linear infinite, rotate 5s ease-in-out infinite;
+    fill: #5b6b61;
 }
 
 /* Left leaf animation */
