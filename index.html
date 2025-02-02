@@ -3,68 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kent & Margarette's Wedding</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kent & Margarette - Wedding Invitation</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav>
-        <h1>Kent & Margarette</h1>
+        <div class="logo">Kent & Margarette</div>
     </nav>
 
-    <!-- Couple Image Slider 
-    <div class="slider-container">
+        <!-- Picture and Message Section -->
+    <div class="picture-message">
+        <div class="picture-container">
+            <img src="IMG_5113.jpg" alt="Kent & Margarette" class="couple-picture">
+        </div>  
+        <!-- 
+        <div class="slider-container">
         <div class="slider">
-            <img src="images/couple1.jpg" alt="Kent & Margarette 1">
-            <img src="images/couple2.jpg" alt="Kent & Margarette 2">
-            <img src="images/couple3.jpg" alt="Kent & Margarette 3">
+            <img src="IMG_5756.jpg" alt="Kent & Margarette 1">
+            <img src="IMG_5113.jpg" alt="Kent & Margarette 2">
+            <img src="IMG_5113.jpg" alt="Kent & Margarette 3">
         </div>
         <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button> -->
+    </div> 
+        <div class="message">
+            <h3>Our Journey</h3>
+            <p>We are so excited to share this special day with you! Thank you for being part of our lives. We can’t wait to celebrate with you!</p>
+        </div>
     </div>
-    -->
     
-    <!-- Wedding Date & Countdown -->
-    <div class="wedding-info">
-        <h2>Our Wedding Day</h2>
-        <p>March 27, 2024</p>
-        <div id="countdown"></div>
-        <h3>Dress Code</h3>
+
+    <div class="container floral-background">
+        <h2>You're Invited to Our Wedding</h2>
+        <div class="rsvp-btn">
+            <button onclick="document.getElementById('rsvp-form').style.display='block'">
+                RSVP
+            </button>
+        </div>
+        <div class="invitation">
+            We are delighted to invite you to celebrate the union of<br>
+            <strong>Kent & Margarette</strong>
+        </div>
+        <div class="wedding-date">
+            Wedding Date: March 27, 2025
+        </div>
+        
+        <!-- Wedding Dress Code Section -->
         <div class="dress-code">
-            <img src="images/male-dresscode.jpg" alt="Male Dress Code">
-            <img src="images/female-dresscode.jpg" alt="Female Dress Code">
+            <h3>Wedding Dress Code</h3>
+            <p>Please dress in formal attire. Here are some suggestions:</p>
+            <div class="dress-code-images">
+                <div class="image-container">
+                    <h4>For Him</h4>
+                    <img src="male-beige.jpg" alt="Male Dress Code">
+                </div>
+                <div class="image-container">
+                    <h4>For Her</h4>
+                    <img src="female-sage.jpg" alt="Female Dress Code">
+                </div>
+            </div>
         </div>
-    </div>
-
-    <!-- Wedding Venue -->
-    <div class="venue">
-        <h3>Location & Venue</h3>
-        <p>We are celebrating our special day at the beautiful <strong>Sunset Garden Resort</strong>.</p>
-        <p>📍 Balai Farinas, Purok 6, brgy. Janopol, Tanauan Batangas</p>
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4288.228863583142!2d121.07521707547247!3d14.077887089659633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd710521cd8ad9%3A0x838bd05b991eab30!2sBalai%20Fari%C3%B1as!5e1!3m2!1sen!2sph!4v1738384029185!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div id="rsvp-form" class="rsvp-form">
+            <h2>RSVP</h2>
+            <form id="form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">Message for Us:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+                <button type="button" onclick="closeRsvpForm()">Close</button>
+            </form>
         </div>
+            <!-- Location and Venue Section -->
+        <div class="venue">
+            <h3>Location & Venue</h3>
+            <p>We are celebrating our special day at the beautiful <strong>Sunset Garden Resort</strong>.</p>
+            <p>Address: Balai Farinas, Purok 6, brgy. Janopol, Tanauan Batangas</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4288.228863583142!2d121.07521707547247!3d14.077887089659633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd710521cd8ad9%3A0x838bd05b991eab30!2sBalai%20Fari%C3%B1as!5e1!3m2!1sen!2sph!4v1738384029185!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        
     </div>
 
-    <!-- RSVP Form -->
-    <div class="rsvp">
-        <h2>RSVP</h2>
-        <button onclick="openRsvpForm()">I will be there!</button>
+    <div class="footer">
+        <p id="timer"></p>
+        <p>With love, Kent & Margarette</p> 
     </div>
+    <!-- 
+    <div class="countdown">
+        <p id="timer">Countdown: </p>    
+    </div>-->
 
-    <div id="rsvp-form" class="rsvp-form">
-        <h2>RSVP Form</h2>
-        <form id="form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="message">Message for Us:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-            <button type="button" onclick="closeRsvpForm()">Close</button>
-        </form>
-    </div>
+    <script src="script.js"></script>
 
 </body>
 </html>
