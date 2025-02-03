@@ -11,7 +11,7 @@ body {
 nav {
     position: absolute; /* Changed to absolute position */
     font-family: 'Alex Brush', cursive;
-    top: 30; /* Ensures it stays at the top of the page */
+    top: 0; /* Ensures it stays at the top of the page */
     left: 50%; /* Centers the content horizontally */
     transform: translateX(-50%); /* Adjusts the position to make it exactly centered */
     background: #A67B6F;
@@ -23,8 +23,8 @@ nav {
 }
 
 nav .logo {
-    font-weight: 700;
-    font-size: 34px;
+    font-weight: 800;
+    font-size: 49px;
 }
 
 
