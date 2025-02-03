@@ -255,7 +255,6 @@ h1 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Alex Brush', cursive;
 }
 
 #couple-names {
@@ -313,13 +312,13 @@ h1 {
 
 .message h3 {
     font-size: 2em;
-    color: #5b6b61;
+    color: #A67B6F;
     margin: 10px 0;
 }
 
 .message p {
     font-size: 1.2em;
-    color: #5b6b61;
+    color: #A67B6F;
     margin: 10px auto;
     width: 80%;
 }
