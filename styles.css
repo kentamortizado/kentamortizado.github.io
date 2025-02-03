@@ -10,6 +10,7 @@ body {
 
 nav {
     position: absolute; /* Changed to absolute position */
+    font-family: 'Alex Brush', cursive;
     top: 30; /* Ensures it stays at the top of the page */
     left: 50%; /* Centers the content horizontally */
     transform: translateX(-50%); /* Adjusts the position to make it exactly centered */
@@ -23,7 +24,7 @@ nav {
 
 nav .logo {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 34px;
 }
 
 
