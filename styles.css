@@ -251,12 +251,10 @@ h1 {
     border-top: none !important;
     text-align: center;
     margin: 10px 0;
-    background-color: #F5EFE6;
+    background-color: transparent;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 2;
 }
 
 #couple-names {
