@@ -720,7 +720,7 @@ border-radius: 5px;
 
 #palm-tree {
 position: fixed;
-top: 0;
+top: 50px;
 right: 0;
 width: 150px; /* Adjust size as needed */
 height: auto;
