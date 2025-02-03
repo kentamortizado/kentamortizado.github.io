@@ -736,7 +736,7 @@ pointer-events: none; /* Ensures it doesn’t interfere with clicks */
     height: auto;
     z-index: 1000; /* Keeps it on top of other elements */
     pointer-events: none; /* Ensures it doesn’t interfere with clicks */
-    transform: rotate(180deg); /* Flip the palm tree upside down */
+    transform: scaleY(-1); /* Flip the palm tree upside down */
   }
 
 #palm-tree-bottom-left {
