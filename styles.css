@@ -101,7 +101,7 @@ h1 {
 }
 
 .floral-background {
-    /* Replace with actual floral image URL */
+    background-image: url('https://www.example.com/your-floral-image.jpg'); /* Replace with actual floral image URL */
     background-size: cover;
     background-position: center;
     height: 100%;
