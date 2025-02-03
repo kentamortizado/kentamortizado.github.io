@@ -249,7 +249,7 @@ h1 {
 /* Picture and Message Section */
 .picture-message {
     text-align: center;
-    margin: 130px 0;
+    margin: 80px 0;
     background-color: #F5EFE6;
     padding: 20px;
     border-radius: 8px;
@@ -710,7 +710,7 @@ border-radius: 5px;
 #palm-tree {
 position: fixed;
 top: 0;
-right: 0;
+right: 50;
 width: 150px; /* Adjust size as needed */
 height: auto;
 z-index: 1000; /* Keeps it on top of other elements */
