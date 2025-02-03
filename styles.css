@@ -101,7 +101,7 @@ h1 {
 }
 
 .floral-background {
-    background-image: url('https://www.example.com/your-floral-image.jpg'); /* Replace with actual floral image URL */
+    /* Replace with actual floral image URL */
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -259,7 +259,7 @@ h1 {
 
 #couple-names {
     font-family: 'Alex Brush', cursive;
-    font-size: 35px; /* Adjust size as needed */
+    font-size: 30px; /* Adjust size as needed */
     font-weight: 1800;
     text-align: center;
     color: #5b6b61; /* Choose a romantic floral color */
@@ -268,7 +268,7 @@ h1 {
   
 
 .picture-container {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 .couple-picture {
