@@ -707,16 +707,27 @@ border-radius: 5px;
     100% { transform: rotate(5deg); }
   }
 
-.hanging-vine {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px; /* Adjust size */
-    height: auto;
-    pointer-events: none;
+#palm-tree {
+position: fixed;
+top: 0;
+right: 0;
+width: 150px; /* Adjust size as needed */
+height: auto;
+z-index: 1000; /* Keeps it on top of other elements */
+pointer-events: none; /* Ensures it doesn’t interfere with clicks */
+}
+
+@keyframes sway {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
   }
   
+  #palm-tree {
+    animation: sway 4s infinite ease-in-out;
+  }
+  
+
   
 
   
