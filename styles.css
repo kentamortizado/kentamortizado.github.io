@@ -730,7 +730,7 @@ pointer-events: none; /* Ensures it doesn’t interfere with clicks */
 
 #palm-tree-inverted {
     position: fixed;
-    top: 50px;
+    top: 25px;
     right: 0;
     width: 150px; /* Adjust size as needed */
     height: auto;
