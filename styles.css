@@ -707,12 +707,16 @@ border-radius: 5px;
     100% { transform: rotate(5deg); }
   }
 
-.hanging-plants {
-background-image: url('vines.png'); /* Replace with a vine PNG */
-background-repeat: no-repeat;
-background-position: top center;
-background-size: cover;
-}
+.hanging-vine {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; /* Adjust size */
+    height: auto;
+    pointer-events: none;
+  }
+  
   
 
   
