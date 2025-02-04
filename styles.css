@@ -286,8 +286,7 @@ h1 {
     width: 100%;
     max-width: 400px; /* Set a max width for the picture */
     height: auto;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-top: 50%;
     border-bottom: 10%; /* Makes the image round */
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
