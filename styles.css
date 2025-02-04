@@ -288,7 +288,7 @@ h1 {
     height: auto;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    border-radius: 10%; /* Makes the image round */
+    border-bottom: 10%; /* Makes the image round */
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
 }
