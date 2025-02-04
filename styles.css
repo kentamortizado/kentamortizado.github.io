@@ -263,17 +263,17 @@ h1 {
     font-weight: 1800;
     text-align: center;
     color: #5b6b61; /* Choose a romantic floral color */
-    margin-bottom: 0; /* Space before picture-message */
+    margin-bottom: 10px; /* Space before picture-message */
     animation: fadeIn 3s ease-out;
   }
 
 #couple-date {
     font-family: 'trajan-pro-3', serif;
-    font-size: 15px; /* Adjust size as needed */
+    font-size: 20px; /* Adjust size as needed */
     font-weight: 1800;
     text-align: center;
     color: #5b6b61; /* Choose a romantic floral color */
-    margin-bottom: 20px; /* Space before picture-message */
+    margin-bottom: 30px; /* Space before picture-message */
     animation: fadeIn 3s ease-out;
   }
   
