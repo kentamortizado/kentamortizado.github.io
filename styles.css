@@ -250,7 +250,7 @@ h1 {
 .picture-message {
     border-top: none !important;
     text-align: center;
-    margin: 10px 0;
+    margin: 30px 0;
     background-color: transparent;
     padding: 20px;
     border-radius: 8px;
@@ -372,6 +372,17 @@ h1 {
 }
 
 .venue h3 {
+    font-size: 36px;
+    color: #A67B6F; /* Elegant floral color */
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.3); /* Light transparency for readability */
+    border-radius: 5px;
+}
+
+.venue p {
     font-size: 36px;
     color: #A67B6F; /* Elegant floral color */
     font-weight: bold;
