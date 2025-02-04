@@ -253,10 +253,7 @@ h1 {
     margin: 10px 0;
     background-color: transparent;
     padding: 20px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -289,6 +286,8 @@ h1 {
     width: 100%;
     max-width: 400px; /* Set a max width for the picture */
     height: auto;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     border-radius: 10%; /* Makes the image round */
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
