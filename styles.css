@@ -564,7 +564,10 @@ iframe {
 /* Form Container */
 /* RSVP Button */
 #openModal {
-    background-color: #5b6b61;
+    background: url('flowers/venueplant.png') no-repeat center/cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     color: white;
     border: none;
     padding: 12px 18px;
