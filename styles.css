@@ -265,7 +265,7 @@ h1 {
     font-weight: 2800;
     text-align: center;
     color: #5b6b61; /* Choose a romantic floral color */
-    margin-bottom: 10px; /* Space before picture-message */
+    margin-bottom: 5px; /* Space before picture-message */
     animation: fadeIn 3s ease-out;
   }
 
@@ -744,7 +744,7 @@ transform: scaleX(-1);
 pointer-events: none; /* Ensures it doesn’t interfere with clicks */
 }
 
-#palm-tree {
+#flowers2 {
     position: fixed;
     top: 50px;
     right: 0;
