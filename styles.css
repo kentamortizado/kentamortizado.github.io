@@ -176,8 +176,14 @@ h1 {
 }
 
 .dress-code p {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    color: #A67B6F; /* Elegant floral color */
+    font-weight: normal;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.3); /* Light transparency for readability */
+    border-radius: 5px;
 }
 
 .color-palette-container {
@@ -389,8 +395,6 @@ h1 {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.3); /* Light transparency for readability */
-    border-radius: 5px;
 }
 
 .venue p {
