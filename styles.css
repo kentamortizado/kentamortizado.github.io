@@ -265,6 +265,15 @@ h1 {
     color: #5b6b61; /* Choose a romantic floral color */
     margin-bottom: 20px; /* Space before picture-message */
   }
+
+#couple-date {
+    font-family: 'Alex Brush', cursive;
+    font-size: 15px; /* Adjust size as needed */
+    font-weight: 1800;
+    text-align: center;
+    color: #5b6b61; /* Choose a romantic floral color */
+    margin-bottom: 20px; /* Space before picture-message */
+  }
   
 
 .picture-container {
