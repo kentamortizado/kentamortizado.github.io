@@ -262,7 +262,7 @@ h1 {
 #couple-names {
     font-family: 'Alex Brush', cursive;
     font-size: 40px; /* Adjust size as needed */
-    font-weight: 2800;
+    font-weight: 3500;
     text-align: center;
     color: #5b6b61; /* Choose a romantic floral color */
     margin-bottom: 5px; /* Space before picture-message */
@@ -746,7 +746,7 @@ pointer-events: none; /* Ensures it doesn’t interfere with clicks */
 
 #flowers2 {
     position: fixed;
-    top: 500px;
+    top: 450px;
     right: -25px;
     width: 150px; /* Adjust size as needed */
     height: auto;
