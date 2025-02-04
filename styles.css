@@ -738,7 +738,9 @@ top: 0;
 right: 0;
 width: 150px; /* Adjust size as needed */
 height: auto;
+opacity: 0.5;
 z-index: -1; /* Keeps it on top of other elements */
+transform: scaleX(-1);
 pointer-events: none; /* Ensures it doesn’t interfere with clicks */
 }
 
