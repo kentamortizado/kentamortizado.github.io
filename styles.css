@@ -324,6 +324,7 @@ h1 {
 
 
 .message h3 {
+    font-family: 'trajan-pro-3', serif;
     font-size: 2em;
     color: #A67B6F;
     margin: 10px 0;
@@ -737,7 +738,7 @@ top: 50px;
 right: 0;
 width: 150px; /* Adjust size as needed */
 height: auto;
-z-index: 1000; /* Keeps it on top of other elements */
+z-index: -1; /* Keeps it on top of other elements */
 pointer-events: none; /* Ensures it doesn’t interfere with clicks */
 }
 
