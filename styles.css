@@ -276,24 +276,7 @@ font-weight: bold;
 font-size: 2rem;
  }
 
-.gold-button {
-background: linear-gradient(45deg, #FFD700, #FFA500, #FFEC8B);
-border: none;
-padding: 10px 20px;
-font-size: 1.2rem;
-font-weight: bold;
-color: white;
-border-radius: 5px;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-cursor: pointer;
-transition: 0.3s;
-}
-
-.gold-button:hover {
-background: linear-gradient(45deg, #FFA500, #FFD700);
-}
-  
-
+ 
 .gold-stroke {
     display: inline-block;
     background: url('gold-brushstroke.png') no-repeat center;
