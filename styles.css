@@ -360,6 +360,31 @@ h1 {
 
 
 /* Location and Venue Section */
+.venue2 {
+    position: relative;
+    text-align: center;
+    font-family: 'Alex Brush', cursive;
+    font-size: 48px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #5a3e36; /* Elegant floral color */
+    padding: 20px;
+  }
+  
+  .venue2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    background: url('flowers/venueplant.png') no-repeat center/contain; /* Replace 'plant.png' with your image */
+    transform: translate(-50%, -50%);
+    opacity: 0.6; /* Adjust transparency */
+    z-index: -1; /* Ensure it stays behind the text */
+  }
+  
+
+
 .venue {
     text-align: center;
     margin: 40px 0;
