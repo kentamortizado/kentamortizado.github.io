@@ -331,11 +331,22 @@ h1 {
     margin: 10px 0;
 }
 
-.message p {
+.message2 p {
     font-size: 1.2em;
     color: #A67B6F;
     margin: 10px auto;
     width: 80%;
+}
+
+.message p {
+    font-size: 36px;
+    color: #A67B6F; /* Elegant floral color */
+    font-weight: normal;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.3); /* Light transparency for readability */
+    border-radius: 5px;
 }
 
 /* Responsive Styles */
