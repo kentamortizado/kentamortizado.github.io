@@ -738,10 +738,21 @@ top: 50px;
 right: 0;
 width: 150px; /* Adjust size as needed */
 height: auto;
-z-index: -1; /* Keeps it on top of other elements */
+z-index: -2; /* Keeps it on top of other elements */
 pointer-events: none; /* Ensures it doesn’t interfere with clicks */
-transform: scaleX(-1);
+transform: scaleY(-1);
 }
+
+#flower-countdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    z-index: -1; /* Keeps it on top of other elements */
+    pointer-events: none; /* Ensures it doesn’t interfere with clicks */
+    transform: scaleX(-1);
+    }
 
 #palm-tree-inverted {
     position: fixed;
