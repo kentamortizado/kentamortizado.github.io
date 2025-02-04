@@ -268,6 +268,43 @@ h1 {
     margin-bottom: 10px; /* Space before picture-message */
     animation: fadeIn 3s ease-out;
   }
+.gold-text {
+background: linear-gradient(45deg, #D4AF37, #FFD700, #FFEC8B, #B8860B);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bold;
+font-size: 2rem;
+ }
+
+.gold-button {
+background: linear-gradient(45deg, #FFD700, #FFA500, #FFEC8B);
+border: none;
+padding: 10px 20px;
+font-size: 1.2rem;
+font-weight: bold;
+color: white;
+border-radius: 5px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+transition: 0.3s;
+}
+
+.gold-button:hover {
+background: linear-gradient(45deg, #FFA500, #FFD700);
+}
+  
+
+.gold-stroke {
+    display: inline-block;
+    background: url('gold-brushstroke.png') no-repeat center;
+    background-size: cover;
+    padding: 10px 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  
 
 #couple-date {
     font-family: 'trajan-pro-3', serif;
