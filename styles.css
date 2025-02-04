@@ -744,8 +744,7 @@ transform: scaleY(-1);
 }
 
 #flower-countdown {
-    position: absolute;
-    top: 50px;
+    position: fixed;
     right: 0;
     width: 150px; /* Adjust size as needed */
     height: auto;
@@ -782,6 +781,10 @@ transform: scaleY(-1);
   }
   
   #palm-tree {
+    animation: sway 4s infinite ease-in-out;
+  }
+
+  #flower-countdown {
     animation: sway 4s infinite ease-in-out;
   }
 
