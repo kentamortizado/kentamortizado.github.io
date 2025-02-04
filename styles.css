@@ -6,8 +6,7 @@ body {
     margin: 0;
     padding: 0;
     color: #3A3A3A;
-    background: linear-gradient(to bottom, #fff6e6, #ffdfba);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 15px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(to bottom, #fff6e6, #ffdfba), radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
 }
 
 nav {
