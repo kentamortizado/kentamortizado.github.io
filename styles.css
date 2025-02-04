@@ -746,7 +746,7 @@ pointer-events: none; /* Ensures it doesn’t interfere with clicks */
 
 #flowers2 {
     position: fixed;
-    top: 380px;
+    top: 500px;
     right: -25px;
     width: 150px; /* Adjust size as needed */
     height: auto;
