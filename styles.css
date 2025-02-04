@@ -364,7 +364,7 @@ h1 {
     position: relative;
     text-align: center;
     font-family: 'Alex Brush', cursive;
-    font-size: 48px; /* Adjust size as needed */
+    font-size: 20px; /* Adjust size as needed */
     font-weight: bold;
     color: #5a3e36; /* Elegant floral color */
     padding: 20px;
@@ -375,7 +375,7 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 120px; /* Adjust size as needed */
+    width: 220px; /* Adjust size as needed */
     height: 120px;
     background: url('flowers/venueplant.png') no-repeat center/contain; /* Replace 'plant.png' with your image */
     transform: translate(-50%, -50%);
