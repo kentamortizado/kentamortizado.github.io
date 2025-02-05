@@ -54,7 +54,7 @@ document.getElementById('rsvpForm').addEventListener('submit', function (e) {
     const now = new Date();
     formData.append('timestamp', now.toISOString());
 
-    fetch('https://script.google.com/macros/s/AKfycbxheIy1wqYrnv3QtRgb3ae4DlLLhTXF5Z2N1c6iZf7MGSytt3sxJhNtPjtffIUFD6vtPA/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbz62YjF85HeJLx4bvD8XvcufS5h5LMrVLarWOepCjkmVKWgnZucknYBiTmt9lmm-vc1Qw/exec', {
         method: 'POST',
         body: formData,
         mode: 'no-cors'
