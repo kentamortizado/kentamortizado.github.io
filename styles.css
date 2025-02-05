@@ -80,34 +80,48 @@ h1 {
     text-align: center;
 }
 
+
+.footer-container {
+    position: relative; /* Needed for absolute positioning of the plant */
+}
+
 .footer {
-    text-align: center;
-    background-color: #A67B6F;
-    padding: 20px;
-    font-size: 16px;
-    color: #ffffff;
     position: relative;
-    width: 100%;
-    margin-top: 50px;
-}
-
-.footer {
-    margin-top: auto;
-}
-
-.footer a {
+    background-color: rgba(166, 123, 111, 0.7); /* Slight transparency */
     color: white;
-    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    z-index: 10; /* Ensures the footer text is above */
 }
 
-.floral-background {
-    background-image: url('https://www.example.com/your-floral-image.jpg'); /* Replace with actual floral image URL */
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    padding: 50px 0;
-    animation: fadeIn 4s ease-out;
+.plant-bottom {
+    position: absolute;
+    bottom: -30px; /* Adjust position to make it visible */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    z-index: 5; /* Places the plant behind the footer */
+    
 }
+
+.plant-bottom img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8; /* Makes it blend nicely */
+}
+
+.footerflower {
+    position: fixed;
+    bottom: 0;
+    width: 550px; /* Adjust size as needed */
+    height: auto;
+    z-index: -1; /* Keeps it on top of other elements */
+    pointer-events: none; /* Ensures it doesn’t interfere with clicks */
+    opacity: 0.5;
+    }
+
+
 
 @keyframes fadeIn {
     from {
@@ -400,7 +414,7 @@ h1 {
 .venue p {
     font-size: 36px;
     color: #A67B6F; /* Elegant floral color */
-    font-weight: bold;
+    font-weight: normal;
     position: relative;
     display: inline-block;
     padding: 10px 20px;
