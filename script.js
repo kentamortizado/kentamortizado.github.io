@@ -105,3 +105,5 @@ function fetchHashtagPosts() {
 
 // Call the function to load posts when the page loads
 window.onload = fetchHashtagPosts;
+
+
