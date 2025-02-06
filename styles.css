@@ -211,15 +211,38 @@ h1 {
 }
 
 .dress-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 5px; /* Adjust spacing between images */
+    justify-items: center;
+}
+@media (min-width: 1024px) {
+    .dress-images {
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+        grid-template-rows: repeat(2, auto); /* Creates only 2 rows */
+    }
+}
+
+/* Tablet and Mobile - Stacks images */
+@media (max-width: 900px) {
+    .dress-images {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 400px) {
+    .dress-images {
+        grid-template-columns: 2fr; /* Stacks into 1 column on mobile */
+    }
 }
 
 .image-container {
-    width: 250px;
-    text-align: center;
+    width: 100%; /* Make images responsive */
+    max-width: 250px; /* Adjust max size as needed */
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Optional: for rounded corners */
+
 }
 
 .dress-image {
