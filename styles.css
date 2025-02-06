@@ -192,7 +192,7 @@ h1 {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.3); /* Light transparency for readability */
+    background: rgba(255, 255, 255, 0.7); /* Light transparency for readability */
     border-radius: 5px;
 }
 
@@ -345,7 +345,11 @@ h1 {
     font-family: 'trajan-pro-3', serif;
     font-size: 2em;
     color: #A67B6F;
-    margin: 10px 0;
+    margin-top: 50px;
+    margin-bottom: -16px;
+    background: rgba(255, 255, 255, 0.7); /* Light transparency for readability */
+    border-radius: 5px;
+    padding: 10px 20px;
 }
 
 .message2 p {
@@ -362,7 +366,7 @@ h1 {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.3); /* Light transparency for readability */
+    background: rgba(255, 255, 255, 0.7); /* Light transparency for readability */
     border-radius: 5px;
 }
 
@@ -769,15 +773,15 @@ border-radius: 5px;
   }
 
 #palm-tree {
-position: fixed;
-top: 0;
-right: 0;
-width: 150px; /* Adjust size as needed */
-height: auto;
-opacity: 0.5;
-z-index: -1; /* Keeps it on top of other elements */
-transform: scaleX(-1);
-pointer-events: none; /* Ensures it doesn’t interfere with clicks */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    opacity: 0.5;
+    z-index: -1; /* Keeps it on top of other elements */
+    transform: scaleX(-1);
+    pointer-events: none; /* Ensures it doesn’t interfere with clicks */
 }
 
 #flowers2 {
@@ -786,6 +790,17 @@ pointer-events: none; /* Ensures it doesn’t interfere with clicks */
     right: -25px;
     width: 150px; /* Adjust size as needed */
     height: auto;
+    z-index: -1; /* Keeps it on top of other elements */
+    pointer-events: none; /* Ensures it doesn’t interfere with clicks */
+    }
+
+#leftplant {
+    position: fixed;
+    top: 150px;
+    left: -10px;
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    opacity: 0.8;
     z-index: -1; /* Keeps it on top of other elements */
     pointer-events: none; /* Ensures it doesn’t interfere with clicks */
     }
@@ -823,6 +838,10 @@ pointer-events: none; /* Ensures it doesn’t interfere with clicks */
   #flowers2 {
     animation: sway 4s infinite ease-in-out;
   }
+  #leftplant {
+    animation: sway 4s infinite ease-in-out;
+  }
+  
   
 
 @keyframes sway {
