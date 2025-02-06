@@ -414,16 +414,18 @@ h1 {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
+    margin-bottom: 10px;
 }
 
 .venue p {
+    margin-top: 0;
     font-size: 36px;
-    color: #A67B6F; /* Elegant floral color */
+    color: gray; /* Elegant floral color */
     font-weight: normal;
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.3); /* Light transparency for readability */
+    background: rgba(255, 255, 255, 0.7); /* Light transparency for readability */
     border-radius: 5px;
 }
 
