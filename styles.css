@@ -174,7 +174,7 @@ h1 {
 
 /* dress code */
 .dress-code {
-    margin-top: 40px;
+    margin-top: 70px;
     text-align: center;
     font-family: 'trajan-pro-3', serif;
     color: #A67B6F;
@@ -187,7 +187,7 @@ h1 {
 
 .dress-code p {
     font-size: 36px;
-    color: #A67B6F; /* Elegant floral color */
+    color: gray; /* Elegant floral color */
     font-weight: normal;
     position: relative;
     display: inline-block;
@@ -342,7 +342,7 @@ h1 {
 }
 
 .message {
-    background: rgba(255, 255, 255, 0.6); /* Light transparency for readability */
+    background: rgba(255, 255, 255, 0.75); /* Light transparency for readability */
     border-radius: 15px;
     padding: 10px 20px;
     position: relative;
@@ -360,14 +360,14 @@ h1 {
 
 .message2 p {
     font-size: 1.2em;
-    color: #A67B6F;
+    color: gray;
     margin: 20px auto;
     width: 80%;
 }
 
 .message p {
     font-size: 36px;
-    color: #A67B6F; /* Elegant floral color */
+    color: gray; /* Elegant floral color */
     font-weight: normal;
     font-family: 'trajan-pro-3', serif;
     margin: 10px auto;
