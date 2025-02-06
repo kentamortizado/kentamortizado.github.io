@@ -87,7 +87,7 @@ h1 {
 
 .footer {
     position: relative;
-    background-color: rgba(166, 123, 111, 0.7); /* Slight transparency */
+    background-color: rgba(166, 123, 111, 0.85); /* Slight transparency */
     color: white;
     text-align: center;
     padding: 20px;
@@ -457,6 +457,18 @@ h1 {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-image-container {
+    text-align: center;
+    margin-top: 15px; /* Space between Google Map and image */
+    margin-bottom: 25px;
+}
+
+.map-image {
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
