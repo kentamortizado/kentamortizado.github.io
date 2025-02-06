@@ -271,6 +271,7 @@ h1 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 #couple-names {
@@ -340,22 +341,27 @@ h1 {
     right: 10px;
 }
 
+.message {
+    background: rgba(255, 255, 255, 0.6); /* Light transparency for readability */
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+}
+
 
 .message h3 {
     font-family: 'trajan-pro-3', serif;
     font-size: 2em;
     color: #A67B6F;
-    margin-top: 50px;
-    margin-bottom: -16px;
-    background: rgba(255, 255, 255, 0.7); /* Light transparency for readability */
-    border-radius: 5px;
-    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .message2 p {
     font-size: 1.2em;
     color: #A67B6F;
-    margin: 10px auto;
+    margin: 20px auto;
     width: 80%;
 }
 
@@ -363,11 +369,9 @@ h1 {
     font-size: 36px;
     color: #A67B6F; /* Elegant floral color */
     font-weight: normal;
-    position: relative;
-    display: inline-block;
+    font-family: 'trajan-pro-3', serif;
+    margin: 10px auto;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.7); /* Light transparency for readability */
-    border-radius: 5px;
 }
 
 /* Responsive Styles */
@@ -466,7 +470,7 @@ iframe {
     font-family: 'Playfair Display', serif;
     color: #A67B6F;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     width: 87%;
     margin-left: auto;
