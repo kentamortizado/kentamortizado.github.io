@@ -897,5 +897,76 @@ animation: sway 4s infinite ease-in-out;
   
 
   
+/*TIMELINE */
+/* Timeline Container */
+.timeline-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.timeline-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #5b6b61; /* Romantic green shade */
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #c1a37f; /* Elegant gold */
+    transform: translateX(-50%);
+}
+
+/* Timeline Event */
+.timeline-event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Left and Right Alignment */
+.timeline-event:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+/* Event Time */
+.event-time {
+    background: #c19991;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+
+/* Event Details */
+.event-details {
+    width: 60%;
+    background: #f5ebd0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+
 
   
