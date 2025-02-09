@@ -967,6 +967,24 @@ animation: sway 4s infinite ease-in-out;
     opacity: 0.8;
 }
 
+/*bible verse*/
+.bible-verse-container {
+    text-align: center;
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background: rgba(245, 235, 208, 0.3); /* Soft romantic background */
+    border-left: 4px solid #5b6b61; /* Subtle decorative border */
+    border-right: 4px solid #5b6b61;
+    border-radius: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
 
-
-  
+.bible-verse {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #5b6b61;
+    line-height: 1.8;
+}
