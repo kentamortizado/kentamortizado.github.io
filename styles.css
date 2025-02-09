@@ -970,19 +970,17 @@ animation: sway 4s infinite ease-in-out;
 /*bible verse*/
 .bible-verse-container {
     text-align: center;
-    padding: 40px;
-    margin: 20px auto;
+    padding: 10px;
+    margin: 50px auto;
     width: 80%;
     max-width: 600px;
-    background: rgba(245, 235, 208, 0.3); /* Soft romantic background */
-    border-left: 4px solid #5b6b61; /* Subtle decorative border */
-    border-right: 4px solid #5b6b61;
+    background: rgba(255, 255, 255, 0.75); /* Light transparency for readability */
     border-radius: 20px;
     font-family: 'Cormorant Garamond', serif;
 }
 
 .bible-verse {
-    font-size: 1.5rem;
+    font-size: 1.05rem;
     font-weight: bold;
     font-style: italic;
     color: #5b6b61;
